@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\dtos\\mappings\\categoriadtomappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\mappings\\categoriadtomappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoriaDtoMappingExtensions.cs",
+              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\DTOs\\Mappings\\CategoriaDtoMappingExtensions.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\DTOs\\Mappings\\CategoriaDtoMappingExtensions.cs",
+              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\DTOs\\Mappings\\CategoriaDtoMappingExtensions.cs",
+              "RelativeToolTip": "APICatalogo\\DTOs\\Mappings\\CategoriaDtoMappingExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:19:37.671Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
               "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
               "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAzwEEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T18:43:53.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Categoria.cs",
@@ -52,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CategoriaDTO.cs",
               "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\DTOs\\CategoriaDTO.cs",
               "RelativeDocumentMoniker": "APICatalogo\\DTOs\\CategoriaDTO.cs",
