@@ -95,6 +95,7 @@ C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.AssemblyInfo.cs
 C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.csproj.CoreCompileInputs.cache
 C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.MvcApplicationPartsAssemblyInfo.cs
 C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.sourcelink.json
 C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\scopedcss\bundle\APICatalogo.styles.css
 C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\staticwebassets.build.json
 C:\dev\APICatalogo\APICatalogo\obj\Debug\net8.0\staticwebassets.development.json
