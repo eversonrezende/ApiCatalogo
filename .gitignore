@@ -15,3 +15,32 @@
 *.vsp
 *.vspx
 *.sap
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+bld/
+bin/
+obj/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# MSTest test Results
+TestResult*/
+BuildLog.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Build results of an ATL Project
+DebugPS/
+ReleasePS/
+dlldata.c
