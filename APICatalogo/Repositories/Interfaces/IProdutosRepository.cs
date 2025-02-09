@@ -1,9 +1,12 @@
 ﻿using APICatalogo.Models;
+using APICatalogo.Pagination;
 
 namespace APICatalogo.Repositories.Interfaces;
 
 public interface IProdutosRepository : IRepository<Produto>
 {
+    //IEnumerable<Produto> GetProdutos(ProdutosParameter produtosParameter);
+    PagedList<Produto> GetProdutos(ProdutosParameter produtosParameter);
     IEnumerable<Produto> GetProdutoPorCategoria(int id);
 
     //IQueryable<Produto> GetProdutos();

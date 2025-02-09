@@ -1,5 +1,6 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.Models;
+using APICatalogo.Pagination;
 using APICatalogo.Repositories.Interfaces;
 
 namespace APICatalogo.Repositories;
@@ -8,7 +9,7 @@ public class ProdutoRepository : Repository<Produto>, IProdutosRepository
 {
     public ProdutoRepository(AppDbContext contexto) : base(contexto)
     {
-        
+
     }
 
     public IEnumerable<Produto> GetProdutoPorCategoria(int id)
@@ -16,7 +17,20 @@ public class ProdutoRepository : Repository<Produto>, IProdutosRepository
         return GetAll().Where(c => c.CategoriaId == id);
     }
 
+    //public IEnumerable<Produto> GetProdutos(ProdutosParameter produtosParameter)
+    //{
+    //    return GetAll()
+    //         .OrderBy(p => p.Nome)
+    //         .Skip((produtosParameter.PageNumber - 1) * produtosParameter.PageSize)
+    //         .Take(produtosParameter.PageSize).ToList();
+    //}
 
+    public PagedList<Produto> GetProdutos(ProdutosParameter produtosParameter)
+    {
+        var produtos = GetAll().OrderBy(p => p.ProdutoId).AsQueryable();
+        var produtosOrdenados = PagedList<Produto>.ToPagedList(produtos, produtosParameter.PageNumber, produtosParameter.PageSize);
+        return produtosOrdenados;
+    }
 
 
     //private readonly AppDbContext _context;
