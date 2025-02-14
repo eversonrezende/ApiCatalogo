@@ -12,29 +12,27 @@ public class ProdutoRepository : Repository<Produto>, IProdutosRepository
 
     }
 
-    public IEnumerable<Produto> GetProdutoPorCategoria(int id)
+    public async Task<IEnumerable<Produto>> GetProdutoPorCategoriaAsync(int id)
     {
-        return GetAll().Where(c => c.CategoriaId == id);
+        var produtos = await GetAllAsync();
+
+        return produtos.Where(c => c.CategoriaId == id);
     }
 
-    //public IEnumerable<Produto> GetProdutos(ProdutosParameter produtosParameter)
-    //{
-    //    return GetAll()
-    //         .OrderBy(p => p.Nome)
-    //         .Skip((produtosParameter.PageNumber - 1) * produtosParameter.PageSize)
-    //         .Take(produtosParameter.PageSize).ToList();
-    //}
-
-    public PagedList<Produto> GetProdutos(ProdutosParameter produtosParameter)
+    public async Task<PagedList<Produto>> GetProdutosAsync(ProdutosParameter produtosParameter)
     {
-        var produtos = GetAll().OrderBy(p => p.ProdutoId).AsQueryable();
-        var produtosOrdenados = PagedList<Produto>.ToPagedList(produtos, produtosParameter.PageNumber, produtosParameter.PageSize);
-        return produtosOrdenados;
+        var produtos = await GetAllAsync();
+
+        var produtosOrdenados = produtos.OrderBy(p => p.ProdutoId).AsQueryable();
+
+        var produtosPaginados = PagedList<Produto>.ToPagedList(produtosOrdenados, produtosParameter.PageNumber, produtosParameter.PageSize);
+
+        return produtosPaginados;
     }
 
-    public PagedList<Produto> GetProdutosFiltroPreco(ProdutosFiltroPreco produtosFiltroPreco)
+    public async Task<PagedList<Produto>> GetProdutosFiltroPrecoAsync(ProdutosFiltroPreco produtosFiltroPreco)
     {
-        var produtos = GetAll().AsQueryable();
+        var produtos = await GetAllAsync();
 
         if (produtosFiltroPreco.Preco.HasValue && !string.IsNullOrEmpty(produtosFiltroPreco.PrecoCriterio))
         {
@@ -52,70 +50,11 @@ public class ProdutoRepository : Repository<Produto>, IProdutosRepository
             }
         }
 
-        var produtosFiltrados = PagedList<Produto>.ToPagedList(produtos,
+        var produtosFiltrados = PagedList<Produto>.ToPagedList(produtos.AsQueryable(),
                                                                               produtosFiltroPreco.PageNumber,
                                                                               produtosFiltroPreco.PageSize);
 
         return produtosFiltrados;
     }
-
-
-
-    //private readonly AppDbContext _context;
-
-    //public ProdutoRepository(AppDbContext context)
-    //{
-    //    _context = context;
-    //}
-
-    //public IQueryable<Produto> GetProdutos()
-    //{
-    //    return _context.Produtos;
-    //}
-
-    //public Produto GetProduto(int id)
-    //{
-    //    return _context.Produtos.FirstOrDefault(p => p.ProdutoId == id);
-    //}
-
-    //public Produto Create(Produto produto)
-    //{
-    //    if (produto is null)
-    //        throw new ArgumentNullException(nameof(produto));
-
-    //    _context.Produtos.Add(produto);
-    //    _context.SaveChanges();
-
-    //    return produto;
-    //}
-
-    //public bool Update(Produto produto)
-    //{
-    //    if (produto is null)
-    //        throw new ArgumentNullException(nameof(produto));
-
-    //    if (_context.Produtos.Any(p => p.ProdutoId == produto.ProdutoId))
-    //    {
-    //        _context.Produtos.Update(produto);
-    //        _context.SaveChanges();
-    //        return true;
-    //    }
-
-    //    return false;
-    //}
-
-    //public bool Delete(int id)
-    //{
-    //    var produto = _context.Produtos.Find(id);
-
-    //    if (produto is not null)
-    //    {
-    //        _context.Produtos.Remove(produto);
-    //        _context.SaveChanges();
-    //        return true;
-    //    }
-
-    //    return false;
-    //}
 
 }
