@@ -7,6 +7,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace APICatalogo.Controllers;
 
@@ -17,13 +18,13 @@ namespace APICatalogo.Controllers;
 public class ProdutosController : ControllerBase
 {
     private readonly IUnitOfWork _uof;
-    private readonly ILogger<ProdutosController> _logger;
+    //private readonly ILogger<ProdutosController> _logger;
     private readonly IMapper _mapper;
 
-    public ProdutosController(IUnitOfWork uof, ILogger<ProdutosController> logger, IMapper mapper)
+    public ProdutosController(IUnitOfWork uof, /*ILogger<ProdutosController> logger,*/ IMapper mapper)
     {
         _uof = uof;
-        _logger = logger;
+        //_logger = logger;
         _mapper = mapper;
     }
 
@@ -68,29 +69,47 @@ public class ProdutosController : ControllerBase
     /// </summary>
     /// <returns>~Retorna uma lista de objetos Produto</returns>
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+    [ProducesDefaultResponseType]
     public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()
     {
-        var produtos = await _uof.ProdutoRepository.GetAllAsync();
-
-        if (produtos is null)
+        try
         {
-            _logger.LogWarning("Produtos não encontrados...");
-            return NotFound("Produtos não encontrados...");
+            var produtos = await _uof.ProdutoRepository.GetAllAsync();
+
+            if (produtos is null)
+            {
+                //_logger.LogWarning("Produtos não encontrados...");
+                return NotFound("Produtos não encontrados...");
+            }
+
+            var produtosDTO = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
+
+            return Ok(produtosDTO);
         }
-
-        var produtosDTO = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
-
-        return Ok(produtosDTO);
+        catch (Exception)
+        {
+            return BadRequest();
+        }
     }
 
     [HttpGet("{id:int:min(1)}", Name = "ObterProduto")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ProdutoDTO>> Get(int id)
     {
         var produto = await _uof.ProdutoRepository.GetAsync(p => p.ProdutoId == id);
 
+        if(id == 0 || id <= 0)
+        {
+            return BadRequest("ID de produto inválido");
+        }
+
         if (produto is null)
         {
-            _logger.LogWarning($"Produto com id = {id} não encontrado...");
+            //_logger.LogWarning($"Produto com id = {id} não encontrado...");
             return NotFound("Produto não encontrado...");
         }
 
@@ -106,7 +125,7 @@ public class ProdutosController : ControllerBase
 
         if (produtos is null)
         {
-            _logger.LogWarning($"Produtos da categoria com id = {id} não encontrados...");
+            //_logger.LogWarning($"Produtos da categoria com id = {id} não encontrados...");
             return NotFound("Produtos não encontrados...");
         }
 
@@ -116,11 +135,13 @@ public class ProdutosController : ControllerBase
     }
 
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<ProdutoDTO>> Post(ProdutoDTO produtoDto)
     {
         if (produtoDto is null)
         {
-            _logger.LogWarning("Produto nulo...");
+            //_logger.LogWarning("Produto nulo...");
             return BadRequest();
         }
 
@@ -135,6 +156,10 @@ public class ProdutosController : ControllerBase
     }
 
     [HttpPatch("{id}/UpdateParcial")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesDefaultResponseType]
     public async Task<ActionResult<ProdutoDTOUpdateResponse>> Patch(int id,
         JsonPatchDocument<ProdutoDTOUpdateRequest> patchProdutoDTO)
     {
@@ -163,11 +188,15 @@ public class ProdutosController : ControllerBase
 
 
     [HttpPut("{id:int}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
+    [ProducesDefaultResponseType]
     public async Task<ActionResult<ProdutoDTO>> Put(int id, ProdutoDTO produto)
     {
         if (id != produto.ProdutoId)
         {
-            _logger.LogWarning($"Produto com id = {id} não encontrado...");
+            //_logger.LogWarning($"Produto com id = {id} não encontrado...");
             return BadRequest();
         }
 
@@ -187,13 +216,16 @@ public class ProdutosController : ControllerBase
     }
 
     [HttpDelete("{id:int}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ProdutoDTO>> Delete(int id)
     {
         var produto = await _uof.ProdutoRepository.GetAsync(p => p.ProdutoId == id);
 
         if (produto is null)
         {
-            _logger.LogWarning($"Produto com id = {id} não encontrado...");
+            //_logger.LogWarning($"Produto com id = {id} não encontrado...");
             return NotFound("Produto não encontrado...");
         }
 

@@ -3,23 +3,44 @@
   "WorkspaceRootPath": "C:\\dev\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE5FF36E-D745-4A7F-AF47-0DD9BB04E8BB}|APICatalogoXUnitTests\\APICatalogoXUnitTests.csproj|c:\\dev\\apicatalogo\\apicatalogoxunittests\\unittests\\produtos\\deleteprodutosunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5FF36E-D745-4A7F-AF47-0DD9BB04E8BB}|APICatalogoXUnitTests\\APICatalogoXUnitTests.csproj|solutionrelative:apicatalogoxunittests\\unittests\\produtos\\deleteprodutosunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5FF36E-D745-4A7F-AF47-0DD9BB04E8BB}|APICatalogoXUnitTests\\APICatalogoXUnitTests.csproj|c:\\dev\\apicatalogo\\apicatalogoxunittests\\unittests\\produtosunittestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5FF36E-D745-4A7F-AF47-0DD9BB04E8BB}|APICatalogoXUnitTests\\APICatalogoXUnitTests.csproj|solutionrelative:apicatalogoxunittests\\unittests\\produtosunittestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE5FF36E-D745-4A7F-AF47-0DD9BB04E8BB}|APICatalogoXUnitTests\\APICatalogoXUnitTests.csproj|c:\\dev\\apicatalogo\\apicatalogoxunittests\\unittests\\produtos\\getprodutounittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5FF36E-D745-4A7F-AF47-0DD9BB04E8BB}|APICatalogoXUnitTests\\APICatalogoXUnitTests.csproj|solutionrelative:apicatalogoxunittests\\unittests\\produtos\\getprodutounittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 198,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DeleteProdutosUnitTests.cs",
+              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogoXUnitTests\\UnitTests\\Produtos\\DeleteProdutosUnitTests.cs",
+              "RelativeDocumentMoniker": "APICatalogoXUnitTests\\UnitTests\\Produtos\\DeleteProdutosUnitTests.cs",
+              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogoXUnitTests\\UnitTests\\Produtos\\DeleteProdutosUnitTests.cs",
+              "RelativeToolTip": "APICatalogoXUnitTests\\UnitTests\\Produtos\\DeleteProdutosUnitTests.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T21:13:55.786Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,23 +49,46 @@
               "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
               "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
               "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAxwMUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAANwAAAAAAAAAAAAQwO4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T18:23:02.121Z",
+              "WhenOpened": "2025-02-18T20:33:57.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
-              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAAAIkAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProdutosUnitTestsController.cs",
+              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogoXUnitTests\\UnitTests\\ProdutosUnitTestsController.cs",
+              "RelativeDocumentMoniker": "APICatalogoXUnitTests\\UnitTests\\ProdutosUnitTestsController.cs",
+              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogoXUnitTests\\UnitTests\\ProdutosUnitTestsController.cs",
+              "RelativeToolTip": "APICatalogoXUnitTests\\UnitTests\\ProdutosUnitTestsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T18:18:29.554Z",
+              "WhenOpened": "2025-02-18T19:24:46.182Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetProdutoUnitTests.cs",
+              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogoXUnitTests\\UnitTests\\Produtos\\GetProdutoUnitTests.cs",
+              "RelativeDocumentMoniker": "APICatalogoXUnitTests\\UnitTests\\Produtos\\GetProdutoUnitTests.cs",
+              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogoXUnitTests\\UnitTests\\Produtos\\GetProdutoUnitTests.cs",
+              "RelativeToolTip": "APICatalogoXUnitTests\\UnitTests\\Produtos\\GetProdutoUnitTests.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:23:58.997Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 202,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }
