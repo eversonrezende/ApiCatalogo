@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\dev\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\testev2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\testev2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\testev1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\testev1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|c:\\dev\\apicatalogo\\apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CAA7E5B-58AF-434E-AF44-B874966F3F6E}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ProdutosController.cs",
               "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
               "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
               "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAxwMUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:13:29.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
-              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:13:08.808Z",
+              "WhenOpened": "2025-02-18T18:23:02.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Program.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
-              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Program.cs",
-              "RelativeToolTip": "APICatalogo\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAswDcAAAA6AAAAAAAAAA==",
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAIkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:09:47.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TesteV2Controller.cs",
-              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\TesteV2Controller.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\TesteV2Controller.cs",
-              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\TesteV2Controller.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\TesteV2Controller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:08:23.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TesteV1Controller.cs",
-              "DocumentMoniker": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\TesteV1Controller.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\TesteV1Controller.cs",
-              "ToolTip": "C:\\dev\\APICatalogo\\APICatalogo\\Controllers\\TesteV1Controller.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\TesteV1Controller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:05:41.626Z",
+              "WhenOpened": "2025-02-18T18:18:29.554Z",
               "EditorCaption": ""
             }
           ]

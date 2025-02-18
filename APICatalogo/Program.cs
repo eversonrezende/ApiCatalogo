@@ -9,6 +9,8 @@ using Asp.Versioning;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -65,7 +67,29 @@ builder.Services.AddScoped<IProdutosRepository, ProdutoRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "APICatalogo",
+        Description = "Catálogo de Produtos e Categorias",
+        TermsOfService = new Uri("https://www.google.com"),
+        Contact = new OpenApiContact
+        {
+            Name = "Everson Rezende",
+            Email = "rezende.everson@gmail.com"
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Usar sivre LICX",
+            Url = new Uri("https://www.google.com")
+        }
+    });
+
+    var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFileName));
+});
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().
     AddEntityFrameworkStores<AppDbContext>().

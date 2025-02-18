@@ -12,7 +12,8 @@ namespace APICatalogo.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-[ApiExplorerSettings(IgnoreApi = true)]
+[ApiConventionType(typeof(DefaultApiConventions))]
+//[ApiExplorerSettings(IgnoreApi = true)]
 public class ProdutosController : ControllerBase
 {
     private readonly IUnitOfWork _uof;
@@ -27,7 +28,7 @@ public class ProdutosController : ControllerBase
     }
 
     [HttpGet("pagination")]
-    public async Task<ActionResult<IEnumerable<ProdutoDTO>>>  Get([FromQuery] ProdutosParameter produtosParameter)
+    public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get([FromQuery] ProdutosParameter produtosParameter)
     {
         var produtos = await _uof.ProdutoRepository.GetProdutosAsync(produtosParameter);
 
@@ -62,6 +63,10 @@ public class ProdutosController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Exibe uma relação de produtos
+    /// </summary>
+    /// <returns>~Retorna uma lista de objetos Produto</returns>
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()
     {
