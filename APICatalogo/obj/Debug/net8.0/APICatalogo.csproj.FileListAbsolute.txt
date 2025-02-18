@@ -6,6 +6,10 @@ C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\APICatalogo.deps.json
 C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\APICatalogo.runtimeconfig.json
 C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\APICatalogo.dll
 C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\APICatalogo.pdb
+C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
 C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\AutoMapper.dll
 C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\Humanizer.dll
 C:\dev\APICatalogo\APICatalogo\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

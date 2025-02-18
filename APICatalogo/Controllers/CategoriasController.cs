@@ -12,7 +12,8 @@ namespace APICatalogo.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-[EnableRateLimiting("fixedwindow")]
+[ApiExplorerSettings(IgnoreApi = true)]
+//[EnableRateLimiting("fixedwindow")]
 public class CategoriasController : ControllerBase
 {
     private readonly IUnitOfWork _uof;
@@ -61,7 +62,7 @@ public class CategoriasController : ControllerBase
     }
 
     [HttpGet]
-    [DisableRateLimiting]
+    //[DisableRateLimiting]
     public async Task<ActionResult<IEnumerable<CategoriaDTO>>> Get()
     {
         var categorias = await _uof.CategoriaRepository.GetAllAsync();
